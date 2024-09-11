@@ -9,9 +9,17 @@ module.exports = {
             },
             errorMessage: 'Nome precisa ter pelo menos 2 caracteres.'
         },
-        quantidadeAssentos: {
+        classeExec: {
             notEmpty: true,
-            errorMessage: 'Informe a quantidade de assentos!'
+            errorMessage: 'Informe a quantidade de assentos executivos!'
+        },
+        primClasse: {
+            notEmpty: true,
+            errorMessage: 'Informe a quantidade de assentos de primeira classe!'
+        },
+        classeEcon: {
+            notEmpty: true,
+            errorMessage: 'Informe a quantidade de assentos economicos!'
         },
         pesoMaximo: {
             notEmpty: true,

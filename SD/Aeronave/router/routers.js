@@ -8,5 +8,6 @@ router.post('/aeronave/add', aeronaveValidator.manipulateAeronave, aeronaveContr
 router.delete('/aeronave/delete', aeronaveController.deleteAeronave);
 router.get('/aeronave/list', aeronaveController.getAeronave);
 router.put('/aeronave/edit', aeronaveValidator.manipulateAeronave, aeronaveController.updateAeronave);
+router.put('/aeronave/alocar', aeronaveValidator.manipulateAeronave, aeronaveController.updateAlocacao);
 
 module.exports = router;
