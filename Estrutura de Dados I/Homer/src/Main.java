@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
         int opcao;
 
@@ -18,33 +18,33 @@ public class Main {
             System.out.println("8. Remover nome da última posição");
             System.out.println("9. Apagar todos os elementos");
             System.out.println("10. Sair");
-            opcao = scanner.nextInt();
-            scanner.nextLine();  // Limpar o buffer
+            opcao = scan.nextInt();
+            scan.nextLine();  
 
             switch (opcao) {
                 case 1:
                     System.out.print("Digite o nome: ");
-                    String nome = scanner.nextLine();
+                    String nome = scan.nextLine();
                     lista.inserirNoFinal(nome);
                     break;
 
                 case 2:
                     System.out.print("Digite o nome: ");
-                    nome = scanner.nextLine();
+                    nome = scan.nextLine();
                     lista.inserirNoInicio(nome);
                     break;
 
                 case 3:
                     System.out.print("Digite o nome: ");
-                    nome = scanner.nextLine();
+                    nome = scan.nextLine();
                     lista.inserirNoFinal(nome);
                     break;
 
                 case 4:
                     System.out.print("Digite o nome: ");
-                    nome = scanner.nextLine();
+                    nome = scan.nextLine();
                     System.out.print("Digite a posição: ");
-                    int posicao = scanner.nextInt();
+                    int posicao = scan.nextInt();
                     lista.inserirPorPosicao(nome, posicao);
                     break;
 
@@ -56,7 +56,7 @@ public class Main {
 
                 case 6:
                     System.out.print("Digite a posição do nome a ser removido: ");
-                    posicao = scanner.nextInt();
+                    posicao = scan.nextInt();
                     lista.removerPorPosicao(posicao);
                     break;
 
@@ -81,6 +81,6 @@ public class Main {
             }
         } while (opcao != 10);
 
-        scanner.close();
+        scan.close();
     }
 }

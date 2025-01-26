@@ -41,15 +41,14 @@ class ListaDuplamenteEncadeada {
 
         No novoNo = new No(nome);
         No atual = inicio;
-        int index = 1; // Ajustando para começar na posição 1
-
+        int index = 1;
         while (atual != null && index < posicao - 1) {
             atual = atual.proximo;
             index++;
         }
 
         if (atual == null) {
-            inserirNoFinal(nome);  // Inserir no final se a posição for maior que o tamanho da lista
+            inserirNoFinal(nome);  
         } else {
             novoNo.proximo = atual.proximo;
             novoNo.anterior = atual;
@@ -88,7 +87,7 @@ class ListaDuplamenteEncadeada {
         }
 
         No atual = inicio;
-        int index = 1; // Ajustando para começar na posição 1
+        int index = 1; 
 
         while (atual != null && index < posicao) {
             atual = atual.proximo;
@@ -105,7 +104,7 @@ class ListaDuplamenteEncadeada {
             if (atual == fim) {
                 fim = atual.anterior;
             }
-            atual = null; // Liberar memória
+            atual = null; 
         }
     }
 
